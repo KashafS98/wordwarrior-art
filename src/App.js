@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import img from "./moulding.jpg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ backgroundImage:`url('${img}')`, position: "relative", width:'100wv', height: '100vh', backgroundPosition:'center', backgroundSize:'cover', backgroundAttachment:'fixed' }} />
+      <div
+        style={{
+          position: "absolute",
+          top: "40%",
+          left: '25%',
+          fontSize: "64px",
+          width: "50%",
+          margin: "0 auto",
+          color: 'white',
+          fontWeight: 900
+        }}
+      >
+        Moulding all experiences into something interesting!
+      </div>
     </div>
   );
 }
